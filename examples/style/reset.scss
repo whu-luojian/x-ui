@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+	padding: 0;
+	font: 14px/1.42858 Helvetica, Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+	color: #333;
+	outline: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background: #c9d2e0;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
+	display: none;
+}

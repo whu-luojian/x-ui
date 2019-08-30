@@ -5,12 +5,35 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-    '@vue/airbnb',
+    '@vue/standard',
     '@vue/typescript',
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'comma-spacing': [2, {
+      'before': false,
+      'after': true
+    }],
+    'comma-style': [2, 'last'],
+    'computed-property-spacing': [2, 'never'],
+    'curly': [2, 'all'],
+    'eqeqeq': [2, 'allow-null'],
+    'quotes': 0,
+    'semi': [2, 'always'],
+    'no-tabs': 0,
+    'no-new': 0,
+    'no-return-assign': 0,
+    'space-in-parens': [0, 'always'],
+    'space-before-function-paren': [0, 'always'],
+    'no-extend-native': 0,
+    'no-useless-escape': 0,
+    'camelcase': 0,
+    'no-unused-vars': ['error', {
+      vars: 'all',
+      varsIgnorePattern: 'I|U|M|AxiosRequestConfig|Commit|MutationTree|ActionTree|Develop|Operation',
+      args: 'none'
+    }]
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
