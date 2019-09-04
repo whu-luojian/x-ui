@@ -1,34 +1,33 @@
 ## Icon 图标
 
-提供了一套常用的图标集合。
+提供了一套常用的图标集合，支持单色图标和多色图标。
 
 ### 使用方法
 
-直接通过设置类名为 `el-icon-iconName` 来使用即可。例如：
+使用`<x-icon></x-icon>`组件，指定图标对应的name属性，示例：
 
-:::demo 描述信息
+:::demo
 ```html
-<i class="el-icon-edit"></i>
-<i class="el-icon-share"></i>
-<i class="el-icon-delete"></i>
+<x-icon name="m-attention"></x-icon>
+<x-icon name="sort"></x-icon>
+<x-icon name="upload"></x-icon>
 ```
 :::
 
-:::demo 描述信息
-```html
-<i class="el-icon-test"></i>
-<i class="el-icon-success"></i>
-<i class="el-icon-fail"></i>
-```
-:::
+### props
+|属性|类型|说明|
+|---|---|---|
+name|String|图标的名称
+size|String \| Number|图标的大小，传入number时单位默认是px
+color|String|图标的颜色，只对单色图标有效
 
 ### 图标集合
 
 <ul class="icon-list">
   <li v-for="name in $icon" :key="name">
     <span>
-      <i :class="'el-icon-' + name"></i>
-      <span class="icon-name">{{'el-icon-' + name}}</span>
+      <x-icon :name="name"></x-icon>
+      <span class="icon-name">{{name}}</span>
     </span>
   </li>
 </ul>

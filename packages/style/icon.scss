@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("./fonts/iconfont.woff") format("woff"),
+    url("./fonts/iconfont.ttf") format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+	font-style: normal;
+	line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-m {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+
+.x-icon-close:before {
+  content: "\e603";
+}
+
+.x-icon-down:before {
+  content: "\e606";
+}
+
+.x-icon-up:before {
+  content: "\e607";
+}
+
+.x-icon-new-folder:before {
+  content: "\e60e";
+}
+
+.x-icon-delete:before {
+  content: "\e60f";
+}
+
+.x-icon-location:before {
+  content: "\e610";
+}
+
+.x-icon-view:before {
+  content: "\e611";
+}
+
+.x-icon-refresh:before {
+  content: "\e618";
+}
+
+.x-icon-file:before {
+  content: "\e619";
+}
+
+.x-icon-folder-closed:before {
+  content: "\e61a";
+}
+
+.x-icon-node:before {
+  content: "\e61b";
+}
+
+.x-icon-metadata:before {
+  content: "\e61c";
+}
+
+.x-icon-folder-open:before {
+  content: "\e61d";
+}
+
+.x-icon-build:before {
+  content: "\e61e";
+}
+
+.x-icon-taskflows:before {
+  content: "\e61f";
+}
+
+.x-icon-slide:before {
+  content: "\e620";
+}
+
+.x-icon-new-tag:before {
+  content: "\e621";
+}
+
+.x-icon-upload:before {
+  content: "\e622";
+}
+
+.x-icon-sort:before {
+  content: "\e623";
+}
+
+.x-icon-filter:before {
+  content: "\e624";
+}

@@ -1,5 +1,5 @@
 <template>
-	<div class="demo-block">
+	<div class="demo-block" :class="blockClass">
 		<div class="source">
 			<slot name="source"></slot>
 		</div>
@@ -25,6 +25,9 @@ export default {
     };
   },
   computed: {
+    blockClass() {
+      return `demo-${this.$router.currentRoute.path.split('/').pop()}`;
+    },
     controlText() {
       return this.isExpanded ? "隐藏代码" : "显示代码";
     }

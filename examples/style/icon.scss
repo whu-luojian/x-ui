@@ -1,0 +1,62 @@
+code {
+  color: #3182bd;
+  line-height: 1.8;
+  font-family: Menlo, Monaco, Consolas, Courier, monospace;
+  font-size: 12px;
+}
+
+.demo-icon .source > div {
+  > i {
+    color: #606266;
+    margin: 0 20px;
+    font-size: 1.5em;
+    vertical-align: middle;
+	}
+	> svg {
+		margin: 0 20px;
+		font-size: 1.5em;
+		vertical-align: middle;
+	}
+}
+
+.content ul.icon-list {
+	overflow: hidden;
+	list-style: none;
+	padding: 0!important;
+	border: 1px solid #eaeefb;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	li {
+    width: 16.66%;
+    text-align: center;
+    height: 120px;
+    color: #666;
+    font-size: 13px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-right: -1px;
+		margin-bottom: -1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			color: #3182bd
+		}
+		>span {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			i {
+				font-size: 28px;
+			}
+			svg {
+				font-size: 28px;
+			}
+			.icon-name {
+				padding-top: 10px;
+			}
+		}
+	}
+}
