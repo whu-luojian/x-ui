@@ -1,6 +1,6 @@
 <template>
-	<i v-if="!isMultiColor" :style="style" class="iconfont" :class="'x-icon-' + name"></i>
-	<svg v-else :style="style" class="iconfont-m" aria-hidden="true">
+	<i v-if="!isMultiColor" :style="style" class="xui-icon" :class="'x-icon-' + name"></i>
+	<svg v-else :style="style" class="xui-icon-m" aria-hidden="true">
 		<use :xlink:href="'#x-icon-' + name" />
 	</svg>
 </template>

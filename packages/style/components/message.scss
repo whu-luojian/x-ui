@@ -1,0 +1,64 @@
+.xui-message {
+	position: fixed;
+	font-size: $--font-size-base;
+	z-index: $--zindex-message;
+	width: 100%;
+	left: 0;
+	pointer-events: none;
+
+	&-notice {
+		padding: 8px;
+		box-sizing: border-box;
+		text-align: center;
+		transition: height .3s ease-in-out, padding .3s ease-in-out;
+
+		&-content {
+			display: inline-block;
+			padding: 8px 16px;
+			border-radius: 4px;
+			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+			background: #fff;
+			position: relative;
+			pointer-events: all;
+
+			.xui-icon {
+				vertical-align: middle;
+			}
+
+			&-text {
+				padding-left: 10px;
+				vertical-align: middle;
+			}
+
+			&-close {
+				cursor: pointer;
+			}
+		}
+
+		&-closable {
+			.xui-message-notice-content-text {
+				padding-right: 64px;
+			}
+		}
+	}
+
+	&-info .xui-icon {
+		color: $--color-info
+	}
+
+	&-success .xui-icon {
+		color: $--color-success
+	}
+
+	&-warning .xui-icon {
+		color: $--color-warning
+	}
+
+	&-error .xui-icon {
+		color: $--color-danger
+	}
+
+	.xui-message-notice-content-close .xui-icon {
+    color: #999;
+	}
+}

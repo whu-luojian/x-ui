@@ -4,7 +4,7 @@
     url("./fonts/iconfont.ttf") format("truetype");
 }
 
-.iconfont {
+.xui-icon {
   font-family: "iconfont" !important;
   font-size: 16px;
 	font-style: normal;
@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconfont-m {
+.xui-icon-m {
 	width: 1em;
 	height: 1em;
 	vertical-align: -0.15em;
@@ -22,7 +22,19 @@
 }
 
 .x-icon-close:before {
-  content: "\e603";
+  content: "\e7fc";
+}
+
+.x-icon-check-circle-fill:before {
+  content: "\e844";
+}
+
+.x-icon-close-circle-fill:before {
+  content: "\e845";
+}
+
+.x-icon-info-circle-fill:before {
+  content: "\e846";
 }
 
 .x-icon-down:before {
