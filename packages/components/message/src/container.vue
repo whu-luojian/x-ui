@@ -1,10 +1,16 @@
 <template>
   <div class="xui-message" :style="wrapStyles">
-    <Message
-      v-for="message in messages"
-      :key="message.name"
-      v-bind="message">
-    </Message>
+    <transition-group name="move-up" appear>
+      <div
+        class="xui-message-notice"
+        v-for="message in messages"
+        :key="message.name"
+        >
+        <Message
+          v-bind="message">
+        </Message>
+      </div>
+    </transition-group>
   </div>
 </template>
 

@@ -1,9 +1,12 @@
 import XIcon from './components/icon/index.js';
+import XPopper from './components/popper/index.js';
 import Message from './components/message/index.js';
 import './style/fonts/iconfont.js';
+import './style/index.scss';
 
 const components = [
-  XIcon
+  XIcon,
+  XPopper
 ];
 
 // 定义install方法，注册所有组件
@@ -22,5 +25,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  XIcon
+  XIcon,
+  XPopper
 };

@@ -1,6 +1,6 @@
 <template>
-  <transition :name="transitionName" appear @enter="handleEnter" @leave="handleLeave">
-    <div class="xui-message-notice">
+  <!-- <transition :name="transitionName" appear @enter="handleEnter" @leave="handleLeave"> -->
+    <!-- <div class="xui-message-notice"> -->
       <div
         :class="[
           'xui-message-notice-content',
@@ -11,13 +11,13 @@
         >
         <x-icon :name="iconName"></x-icon>
         <span v-if="!dangerouslyUseHTMLString" class="xui-message-notice-content-text">{{content}}</span>
-        <span v-else v-html="message" class="xui-message-notice-content-text"></span>
+        <span v-else v-html="content" class="xui-message-notice-content-text"></span>
         <a class="xui-message-notice-content-close" @click="close">
           <x-icon v-if="closable" name="close"></x-icon>
         </a>
       </div>
-    </div>
-  </transition>
+    <!-- </div> -->
+  <!-- </transition> -->
 </template>
 
 <script>
@@ -49,7 +49,7 @@ export default {
     },
     duration: {
       type: Number,
-      default: 1.5
+      default: 3
     },
     dangerouslyUseHTMLString: {
       type: Boolean,
@@ -89,15 +89,15 @@ export default {
   },
   methods: {
     handleEnter (el) {
-      el.style.height = el.scrollHeight + 'px';
+      // el.style.height = el.scrollHeight + 'px';
     },
     handleLeave (el) {
       // 优化一下，如果当前只有一个 Message，则不使用 js 过渡动画，这样更优美
-      if (document.getElementsByClassName('xui-message-notice').length !== 1) {
-        el.style.height = 0;
-        el.style.paddingTop = 0;
-        el.style.paddingBottom = 0;
-      }
+      // if (document.getElementsByClassName('xui-message-notice').length !== 1) {
+      //   el.style.height = 0;
+      //   el.style.paddingTop = 0;
+      //   el.style.paddingBottom = 0;
+      // }
     },
     clearCloseTimer() {
       if (this.closeTimer) {
@@ -107,7 +107,7 @@ export default {
     },
     close() {
       this.clearCloseTimer();
-      this.$parent.close(this.name);
+      this.$parent.$parent.close(this.name);
     }
   }
 };

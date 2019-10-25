@@ -1,59 +1,20 @@
-// .move-up-enter-active, .move-up-appear {
-// 	animation-duration: $animation-time;
-// 	animation-fill-mode: both;
-// 	// animation-play-state: paused;
-// 	animation-name: xuiMoveUpIn;
-// 	animation-timing-function: ease-in-out
-// }
+.move-up-enter-active, .move-up-appear {
+	animation-duration: $animation-time;
+	animation-fill-mode: both;
+	animation-name: xuiMoveUpIn;
+	animation-timing-function: ease-in-out
+}
 
-// .move-up-leave-active {
-// 	animation-duration: $animation-time;
-// 	// animation-fill-mode: both;
-// 	// animation-play-state: running;
-// 	animation-name: xuiMoveUpOut;
-// 	// animation-timing-function: 'ease-in-out'
-// }
+.move-up-leave-active {
+	animation-duration: $animation-time;
+	animation-fill-mode: both;
+	animation-name: xuiMoveUpOut;
+	animation-timing-function: ease-in-out
+}
 
-.move-up-appear,
-.move-up-enter-active {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-.move-up-leave-active {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-.move-up-appear,
-.move-up-enter-active {
-  -webkit-animation-name: xuiMoveUpIn;
-  animation-name: xuiMoveUpIn;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-.move-up-leave-active {
-  -webkit-animation-name: xuiMoveUpOut;
-  animation-name: xuiMoveUpOut;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-.move-up-appear,
-.move-up-enter-active {
-  opacity: 0;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-.move-up-leave-active {
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
+// .move-up-move {
+//   transition: all $animation-time;
+// }
 
 @keyframes xuiMoveUpIn {
   0% {

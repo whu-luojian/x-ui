@@ -10,7 +10,8 @@
 		padding: 8px;
 		box-sizing: border-box;
 		text-align: center;
-		transition: height .3s ease-in-out, padding .3s ease-in-out;
+		// transition: height .3s ease-in-out, padding .3s ease-in-out;
+		transition: all 0.3s;
 
 		&-content {
 			display: inline-block;

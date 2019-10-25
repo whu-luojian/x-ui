@@ -4,7 +4,7 @@ import router from './router/router';
 import DemoBlock from './components/DemoBlock.vue';
 import icons from './assets/icon';
 import XUi from '../packages/index.js';
-import '../packages/style/index.scss';
+// import '../packages/style/index.scss';
 
 Vue.component('demo-block', DemoBlock);
 Vue.use(XUi);

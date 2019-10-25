@@ -6,7 +6,9 @@
         v-for="item in navConfig[title]" :key="item.name">
 				<router-link
 					:to="{name: item.name}"
-				>{{item.desc}}</router-link>
+				>
+          <div class="nav-item-link">{{item.desc}}</div>
+        </router-link>
 			</div>
 		</div>
 	</div>
@@ -32,7 +34,6 @@ export default class Nav extends Vue {
 			font-weight: bold;
 		}
 		.nav-item {
-      padding: 8px 0 10px 48px;
       font-size: 15px;
       cursor: pointer;
       &.active {
@@ -45,6 +46,9 @@ export default class Nav extends Vue {
         a {
           color: $text-highlight-color
         }
+      }
+      .nav-item-link {
+        padding: 8px 0 10px 48px;
       }
 		}
 	}

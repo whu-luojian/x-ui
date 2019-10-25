@@ -26,7 +26,11 @@ import TheSideBar from '@/components/TheSideBar.vue';
     TheSideBar
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private click() {
+    this.$refs.popper.hide();
+  }
+}
 </script>
 
 <style lang="scss">
@@ -44,6 +48,7 @@ export default class App extends Vue {}
   }
   .app-main {
     flex: 1;
+    height: 0;
     display: flex;
     .main-sidebar {
       box-sizing: border-box;
