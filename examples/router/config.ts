@@ -25,6 +25,16 @@ const config: RouterConfig = {
       name: 'icon',
       path: '/icon',
       desc: 'Icon 图标'
+    },
+    {
+      name: 'message',
+      path: '/message',
+      desc: 'Message 消息提示'
+    },
+    {
+      name: 'popper',
+      path: '/popper',
+      desc: 'Popper容器'
     }
   ]
 };

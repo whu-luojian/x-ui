@@ -1,0 +1,35 @@
+.transition-drop-enter-active, .transition-drop-appear {
+	animation-duration: $animation-time;
+	animation-fill-mode: both;
+	animation-name: xuiTransitionDropIn;
+	animation-timing-function: ease-in-out
+}
+
+.transition-drop-leave-active {
+	animation-duration: $animation-time;
+	animation-fill-mode: both;
+	animation-name: xuiTransitionDropOut;
+	animation-timing-function: ease-in-out
+}
+
+@keyframes xuiTransitionDropIn {
+	0% {
+			opacity: 0;
+			transform: scaleY(0.8);
+	}
+	100% {
+			opacity: 1;
+			transform: scaleY(1);
+	}
+}
+
+@keyframes xuiTransitionDropOut {
+	0% {
+			opacity: 1;
+			transform: scaleY(1);
+	}
+	100% {
+			opacity: 0;
+			transform: scaleY(0.8);
+	}
+}
