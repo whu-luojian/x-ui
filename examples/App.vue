@@ -27,9 +27,6 @@ import TheSideBar from '@/components/TheSideBar.vue';
   }
 })
 export default class App extends Vue {
-  private click() {
-    this.$refs.popper.hide();
-  }
 }
 </script>
 

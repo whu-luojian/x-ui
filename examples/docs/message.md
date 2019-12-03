@@ -6,7 +6,7 @@
 
 从顶部出现，3 秒后自动消失。
 
-:::demo Element 注册了一个`$Message`方法用于调用，Message 可以接收一个字符串，它会被显示为正文内容。
+:::demo XUI 注册了一个`$Message`方法用于调用，Message 可以接收一个字符串，它会被显示为正文内容。
 
 ```html
 <template>
