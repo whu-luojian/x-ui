@@ -18,6 +18,7 @@ module.exports = {
       filename: 'index.html'
     }
   },
+  outputDir: 'docs',
   configureWebpack: {
     resolve: {
       alias: {
